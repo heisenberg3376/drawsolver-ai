@@ -9,7 +9,7 @@ function App() {
   const [description, setDescription] = useState('');
   const canvasRef = useRef(null);
 
-  const genAI = new GoogleGenerativeAI('AIzaSyC5vcSOFPDEf2cKemWzWAn83x56Nx0IjjA'); // Replace with your actual API key
+  const genAI = new GoogleGenerativeAI(REACT_APP_GOOGLE_API_KEY); // Replace with your actual API key
 
   const handleDescribeImage1 = async () => {
     try {
